@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:testapp/common/custom_shapes/containers/circular_container.dart';
 import 'package:testapp/common/custom_shapes/containers/primary_header_container.dart';
-import 'package:testapp/common/custom_shapes/curved_edges/curved_edges.dart';
-import 'package:testapp/common/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:testapp/utils/constants/colors.dart';
+import 'package:testapp/features/authentication/screens/home/widgets/home_appbar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,8 +8,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: THomeAppBar(),
       body: SingleChildScrollView(
-        child: Column(children: [TPrimaryHeaderContainer(child: Container())]),
+        child: Column(
+          children: [TPrimaryHeaderContainer(child: Column(children: []))],
+        ),
       ),
     );
   }
