@@ -24,4 +24,7 @@ class TImages {
       "assets/images/animations/vecteezy_email-web-social-media_54484571.png";
   static const String verifyIllustration =
       "assets/images/animations/sammy-Line-travel-backpack-with-passport-and-air-ticket.gif";
+
+  // Category Icons
+  static const String carsIcon = "assets/icons/categories/cars.png";
 }

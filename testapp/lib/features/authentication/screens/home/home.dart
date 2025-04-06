@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:testapp/common/custom_shapes/containers/primary_header_container.dart';
+import 'package:testapp/common/custom_shapes/containers/search_container.dart';
+import 'package:testapp/common/widgets/texts/section_heading.dart';
 import 'package:testapp/features/authentication/screens/home/widgets/home_appbar.dart';
+import 'package:testapp/features/authentication/screens/home/widgets/home_categories.dart';
+import 'package:testapp/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,11 +12,37 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: THomeAppBar(),
       body: SingleChildScrollView(
         child: Column(
-          children: [TPrimaryHeaderContainer(child: Column(children: []))],
+          children: [
+            TPrimaryHeaderContainer(
+              child: Column(
+                children: [
+                  const THomeAppBar(),
+                  const SizedBox(height: TSize.spaceBtwSections),
+
+                  const TSearchContainer(text: "Search in Store"),
+                  const SizedBox(height: TSize.spaceBtwItems / 1.5),
+
+                  Padding(
+                    padding: EdgeInsets.only(left: TSize.defaultSpace),
+                    child: Column(
+                      children: [
+                        TSectionHeading(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                          textColor: Colors.white,
+                        ),
+                        const SizedBox(height: TSize.spaceBtwItems),
+
+                        THomeCategories(),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
