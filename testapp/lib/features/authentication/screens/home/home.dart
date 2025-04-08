@@ -4,6 +4,8 @@ import 'package:testapp/common/custom_shapes/containers/search_container.dart';
 import 'package:testapp/common/widgets/texts/section_heading.dart';
 import 'package:testapp/features/authentication/screens/home/widgets/home_appbar.dart';
 import 'package:testapp/features/authentication/screens/home/widgets/home_categories.dart';
+import 'package:testapp/features/authentication/screens/home/widgets/promo_slider.dart';
+import 'package:testapp/utils/constants/image_strings.dart';
 import 'package:testapp/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,6 +41,19 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+            ),
+
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(TSize.defaultSpace),
+              child: TPromoSlider(
+                banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3,
+                  TImages.promoBanner4,
                 ],
               ),
             ),

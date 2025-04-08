@@ -39,6 +39,7 @@ dependencies:
   flutter_native_splash: ^2.4.5
   smooth_page_indicator: ^1.1.0
   iconsax: ^0.0.8
+  carousel_slider: ^5.0.0
 
   cupertino_icons: ^1.0.8
 
@@ -75,6 +76,7 @@ flutter:
     - assets/images/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/images/banners/
     - assets/logos/
     - assets/videos/
 
