@@ -19,13 +19,7 @@ class TPromoSlider extends StatelessWidget {
     return Column(
       children: [
         CarouselSlider(
-          items:
-              banners
-                  .map(
-                    (url) =>
-                        const TRoundedImage(imageUrl: TImages.promoBanner1),
-                  )
-                  .toList(),
+          items: banners.map((url) => TRoundedImage(imageUrl: url)).toList(),
           options: CarouselOptions(
             viewportFraction: 1,
             onPageChanged: (index, _) => controller.updatePageIndicator(index),
