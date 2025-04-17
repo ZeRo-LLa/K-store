@@ -34,4 +34,8 @@ class TImages {
       "assets/images/banners/corrvetteBanner.jpg";
   static const String promoBanner3 = "assets/images/banners/mersedesBanner.jpg";
   static const String promoBanner4 = "assets/images/banners/porsheBanner.jpg";
+
+  //Products
+  static const String bmwm8competition =
+      "assets/images/products/BMW M8 2022 v1_3.jpg";
 }
