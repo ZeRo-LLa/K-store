@@ -38,4 +38,5 @@ class TImages {
   //Products
   static const String bmwm8competition =
       "assets/images/products/BMW M8 2022 v1_3.jpg";
+  static const String car = "assets/icons/categories/car.png";
 }

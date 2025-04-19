@@ -4,6 +4,7 @@ import 'package:testapp/common/widgets/icons/t_circular_icon.dart';
 import 'package:testapp/common/widgets/images/t_rounded_image.dart';
 import 'package:testapp/common/widgets/texts/product_prize_text.dart';
 import 'package:testapp/common/widgets/texts/product_title_text.dart';
+import 'package:testapp/common/widgets/texts/t_brand_title_text_with_verified_Icon.dart';
 import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/image_strings.dart';
 import 'package:testapp/utils/constants/sizes.dart';
@@ -37,6 +38,7 @@ class TProductCartVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   const TRoundedImage(
+                    height: 150,
                     imageUrl: TImages.bmwm8competition,
                     applyImageRadius: true,
                   ),
@@ -76,57 +78,42 @@ class TProductCartVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ProductTitleText(
+                  const ProductTitleText(
                     title: "BMW M8 Competition 2019",
                     smallSize: true,
                   ),
-                  SizedBox(height: TSize.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'BMW',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: TSize.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSize.iconXs,
-                      ),
-                    ],
-                  ),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const TProductPriceText(price: "99.999"),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSize.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              TSize.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: TSize.iconLg * 1.2,
-                          height: TSize.iconLg * 1.2,
-                          child: Center(
-                            child: const Icon(
-                              Iconsax.add,
-                              color: TColors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                  const SizedBox(height: TSize.spaceBtwItems / 2),
+                  TBrandTitleTextWithVerifiedIcon(title: 'BMW'),
                 ],
               ),
+            ),
+
+            const Spacer(),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: TSize.sm),
+                  child: TProductPriceText(price: "99.999"),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSize.cardRadiusMd),
+                      bottomRight: Radius.circular(TSize.productImageRadius),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: TSize.iconLg * 1.2,
+                    height: TSize.iconLg * 1.2,
+                    child: Center(
+                      child: const Icon(Iconsax.add, color: TColors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
