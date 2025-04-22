@@ -7,7 +7,7 @@ class TFormatter {
   }
 
   static String formatCurrency(double amount) {
-    return NumberFormat.currency(locale: 'ua_UAH', symbol: '\₴').format(amount);
+    return NumberFormat.currency(locale: 'ua_UAH', symbol: '₴').format(amount);
   }
 
   static String formatPhoneNumber(String phoneNumber) {
