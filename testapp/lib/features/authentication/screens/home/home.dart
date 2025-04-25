@@ -43,6 +43,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  SizedBox(height: TSize.spaceBtwSections),
                 ],
               ),
             ),

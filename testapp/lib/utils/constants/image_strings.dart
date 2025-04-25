@@ -39,4 +39,7 @@ class TImages {
   static const String bmwm8competition =
       "assets/images/products/BMW M8 2022 v1_3.jpg";
   static const String car = "assets/icons/categories/car.png";
+
+  //Profile
+  static const String user = "assets/images/user/icons8-user-64.png";
 }
