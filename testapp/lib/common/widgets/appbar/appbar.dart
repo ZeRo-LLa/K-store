@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/sizes.dart';
 import 'package:testapp/utils/device/device_utility.dart';
 import 'package:get/get.dart';
@@ -30,7 +31,7 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
             showBackArrow
                 ? IconButton(
                   onPressed: () => Get.back(),
-                  icon: const Icon(Iconsax.arrow_left),
+                  icon: const Icon(Iconsax.arrow_left, color: TColors.primary),
                 )
                 : leadingIcon != null
                 ? IconButton(

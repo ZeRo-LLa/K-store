@@ -5,8 +5,10 @@ import 'package:testapp/common/widgets/appbar/appbar.dart';
 import 'package:testapp/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:testapp/common/widgets/list_tile/user_profile_title.dart';
 import 'package:testapp/common/widgets/texts/section_heading.dart';
+import 'package:testapp/features/personalization/screens/profile/profile.dart';
 import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -31,7 +33,9 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: TSize.spaceBtwSections),
                   //User Profile Card
-                  const TUserProfileTitle(),
+                  TUserProfileTitle(
+                    onPressed: () => Get.to(() => const ProfileScreen()),
+                  ),
                   const SizedBox(height: TSize.spaceBtwSections),
                 ],
               ),

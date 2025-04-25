@@ -5,8 +5,9 @@ import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/image_strings.dart';
 
 class TUserProfileTitle extends StatelessWidget {
-  const TUserProfileTitle({super.key});
+  const TUserProfileTitle({super.key, required this.onPressed});
 
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -29,7 +30,7 @@ class TUserProfileTitle extends StatelessWidget {
         ).textTheme.bodyMedium!.apply(color: TColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(Iconsax.edit, color: TColors.white),
       ),
     );
