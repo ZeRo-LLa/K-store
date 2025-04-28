@@ -5,12 +5,14 @@ import 'package:testapp/common/widgets/images/t_rounded_image.dart';
 import 'package:testapp/common/widgets/texts/product_prize_text.dart';
 import 'package:testapp/common/widgets/texts/product_title_text.dart';
 import 'package:testapp/common/widgets/texts/t_brand_title_text_with_verified_Icon.dart';
+import 'package:testapp/features/store/screens/product_details/product_detail.dart';
 import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/image_strings.dart';
 import 'package:testapp/utils/constants/sizes.dart';
 import 'package:testapp/utils/helpers/helper_functions.dart';
 import 'package:testapp/utils/theme/custom_themes/rounded_container.dart';
 import 'package:testapp/utils/theme/custom_themes/shadows.dart';
+import 'package:get/get.dart';
 
 class TProductCartVertical extends StatelessWidget {
   const TProductCartVertical({super.key});
@@ -20,7 +22,7 @@ class TProductCartVertical extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 200,
         padding: const EdgeInsets.all(1),
@@ -78,7 +80,7 @@ class TProductCartVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ProductTitleText(
+                  const TProductTitleText(
                     title: "BMW M8 Competition 2019",
                     smallSize: true,
                   ),

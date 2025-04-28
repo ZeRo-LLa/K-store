@@ -4,9 +4,9 @@ import 'package:testapp/common/custom_shapes/containers/search_container.dart';
 import 'package:testapp/common/widgets/products/products.cart/product_card_vertical.dart';
 import 'package:testapp/common/widgets/texts/section_heading.dart';
 import 'package:testapp/features/authentication/controllers.onboarding/widgets/layouts/grid_layout.dart';
-import 'package:testapp/features/authentication/screens/home/widgets/home_appbar.dart';
-import 'package:testapp/features/authentication/screens/home/widgets/home_categories.dart';
-import 'package:testapp/features/authentication/screens/home/widgets/promo_slider.dart';
+import 'package:testapp/features/store/screens/home/widgets/home_appbar.dart';
+import 'package:testapp/features/store/screens/home/widgets/home_categories.dart';
+import 'package:testapp/features/store/screens/home/widgets/promo_slider.dart';
 import 'package:testapp/utils/constants/image_strings.dart';
 import 'package:testapp/utils/constants/sizes.dart';
 

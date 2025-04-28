@@ -5,7 +5,7 @@ import 'package:testapp/common/widgets/appbar/appbar.dart';
 import 'package:testapp/common/widgets/icons/t_circular_icon.dart';
 import 'package:testapp/common/widgets/products/products.cart/product_card_vertical.dart';
 import 'package:testapp/features/authentication/controllers.onboarding/widgets/layouts/grid_layout.dart';
-import 'package:testapp/features/authentication/screens/home/home.dart';
+import 'package:testapp/features/store/screens/home/home.dart';
 import 'package:testapp/utils/constants/sizes.dart';
 
 class FavoriteScreen extends StatelessWidget {
