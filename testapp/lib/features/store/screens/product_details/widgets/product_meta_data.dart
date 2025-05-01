@@ -83,6 +83,7 @@ class TProductMetaData extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(height: TSize.spaceBtwItems / 1.5),
       ],
     );
   }
