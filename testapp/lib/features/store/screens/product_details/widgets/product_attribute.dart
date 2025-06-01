@@ -111,22 +111,22 @@ class TProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TSectionHeading(title: "Size"),
+            const TSectionHeading(title: "Equipment"),
             const SizedBox(height: TSize.spaceBtwItems / 2),
             Wrap(
               children: [
                 TChoiceChip(
-                  text: 'EU 34',
+                  text: 'Standart',
                   selected: true,
                   onSelected: (value) {},
                 ),
                 TChoiceChip(
-                  text: 'EU 36',
+                  text: 'Premium',
                   selected: false,
                   onSelected: (value) {},
                 ),
                 TChoiceChip(
-                  text: 'EU 38',
+                  text: 'M Sport',
                   selected: false,
                   onSelected: (value) {},
                 ),
