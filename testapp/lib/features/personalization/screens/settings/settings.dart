@@ -5,6 +5,7 @@ import 'package:testapp/common/widgets/appbar/appbar.dart';
 import 'package:testapp/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:testapp/common/widgets/list_tile/user_profile_title.dart';
 import 'package:testapp/common/widgets/texts/section_heading.dart';
+import 'package:testapp/features/personalization/screens/address/adress.dart';
 import 'package:testapp/features/personalization/screens/profile/profile.dart';
 import 'package:testapp/utils/constants/colors.dart';
 import 'package:testapp/utils/constants/sizes.dart';
@@ -56,7 +57,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My adress',
                     subTitle: 'Set shopping delivery adress',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
