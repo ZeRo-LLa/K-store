@@ -46,4 +46,9 @@ class TImages {
 
   //Profile
   static const String user = "assets/images/user/icons8-user-64.png";
+
+  // Payment Methods
+  static const String successfulpayment =
+      'assets/icons/payment_methods/pngwing.com-6.png';
+  static const String paypal = "assets/icons/payment_methods/pngwing.com-5.png";
 }
